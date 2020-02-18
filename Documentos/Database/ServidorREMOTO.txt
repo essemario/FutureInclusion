@@ -1,0 +1,5 @@
+Banco do FI
+
+url: mysql.chapela.com.br
+u: "chapela"
+p: "mochilas123"
