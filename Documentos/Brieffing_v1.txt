@@ -5,21 +5,24 @@ IMAGE
 USER (who manage the system)
 	id
 	name
-	lastName
+	last_name
 	level (0, 1, 2) -> (0 Admin, 1 Manager, 2 staff)
+	enabled
+	
 	mandate_id
 	image_id
-	enabled
+	
 
 VOTER (who elect someone)
 	id
 	name
-	lastname
+	last_name
 	email
 	password
-	identification_document
-	image_id
+	document
 	enabled
+
+	image_id
 
 SPHERE 
 	id
@@ -28,6 +31,7 @@ SPHERE
 POWER	
 	id
 	name (Executive branch, legislative branch)	
+	
 	sphere_id
 
 MANDATE 
@@ -39,12 +43,10 @@ MANDATE
 	validated
 	validated_date
 	
-	sphere_id
 	power_id
 	city_id
 	state_id
 	country_id
-	user_id
 	
 CITY
 	id
@@ -61,7 +63,6 @@ COUNTRY
 	name
 	
 VOTER_MANDATE (who will follow some mandate)
-	id
 	voter_id
 	mandate_id
 	
@@ -72,11 +73,12 @@ POLL
 	end_date_time
 	description
 	tags
+	mandate_id
 	
 CHOICE
 	id
-	text
 	poll_id
+	text
 	
 VOTE
 	id
