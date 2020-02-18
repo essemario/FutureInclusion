@@ -1,0 +1,92 @@
+IMAGE
+	id
+	url (public url to access the image)
+	
+USER (who manage the system)
+	id
+	name
+	lastName
+	level (0, 1, 2) -> (0 Admin, 1 Manager, 2 staff)
+	mandate_id
+	image_id
+	enabled
+
+VOTER (who elect someone)
+	id
+	name
+	lastname
+	email
+	password
+	identification_document
+	image_id
+	enabled
+
+SPHERE 
+	id
+	name (country, state, city)
+	
+POWER	
+	id
+	name (Executive branch, legislative branch)	
+	sphere_id
+
+MANDATE 
+	id
+	start_date
+	end_date
+	title (Representative, Federal Deputy, State Deputy, Mayor, President, Senator)
+	active
+	validated
+	validated_date
+	
+	sphere_id
+	power_id
+	city_id
+	state_id
+	country_id
+	user_id
+	
+CITY
+	id
+	name
+	state_id
+	
+STATE
+	id
+	name
+	country_id
+	
+COUNTRY
+	id
+	name
+	
+VOTER_MANDATE (who will follow some mandate)
+	id
+	voter_id
+	mandate_id
+	
+POLL
+	id
+	name
+	start_date_time
+	end_date_time
+	description
+	tags
+	
+CHOICE
+	id
+	text
+	poll_id
+	
+VOTE
+	id
+	choice_id
+	voter_id
+	time
+	
+POST
+	id
+	mandate_id
+	poll_id
+	text
+	date
