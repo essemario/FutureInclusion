@@ -2,18 +2,18 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="backend" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>entity.Choice</class>
-		<class>entity.City</class>
-		<class>entity.Country</class>
-		<class>entity.Image</class>
-		<class>entity.Mandate</class>
-		<class>entity.Poll</class>
-		<class>entity.Post</class>
-		<class>entity.Power</class>
-		<class>entity.Sphere</class>
-		<class>entity.State</class>
-		<class>entity.User</class>
-		<class>entity.Voter</class>
+		<class>br.com.futureinclusion.entity.Choice</class>
+		<class>br.com.futureinclusion.entity.City</class>
+		<class>br.com.futureinclusion.entity.Country</class>
+		<class>br.com.futureinclusion.entity.Image</class>
+		<class>br.com.futureinclusion.entity.Mandate</class>
+		<class>br.com.futureinclusion.entity.Poll</class>
+		<class>br.com.futureinclusion.entity.Post</class>
+		<class>br.com.futureinclusion.entity.Power</class>
+		<class>br.com.futureinclusion.entity.Sphere</class>
+		<class>br.com.futureinclusion.entity.State</class>
+		<class>br.com.futureinclusion.entity.User</class>
+		<class>br.com.futureinclusion.entity.Voter</class>
 		<properties>
 			<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" /> -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
