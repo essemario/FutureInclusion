@@ -1,0 +1,18 @@
+OBSERVAÇÕES IMPORTANTES:
+
+PÁGINA DE LOGIN_
+1. Precisa de um Footer
+2. Precisa dos Media Queries
+3. Precisa ser testada em todos os navegadores
+4. Precisa ser verificado o "tamanho" da página
+
+PÁGINA DE CADASTRO_
+1. O Grid quebrou ao expandir a caixa de formulário
+2. Necessário reformular todo o Grid para reajustar os posicionamentos
+3. Precisa dos Media Queries
+
+PÁGINA DOS VOTERS_
+1. Grid dentro do Grid precisa ser revisado
+2. Página em construção
+3. O Footer não gruda na parte debaixo da tela
+4. Necessário diminuir o tamanho do header sem quebrar o Grid

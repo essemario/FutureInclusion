@@ -1,0 +1,34 @@
+RESUMO:
+
+Criar
+- Formulário de cadastro
+- Formulário de edição
+- Tela de listagem com:
+----- opção de pesquisa por NOME, EMAIL ou CPF
+----- ações: Editar, Excluir, Ativar/Desativar
+
+USER
+- Nome
+- Sobrenome
+- Email
+- Confirmação de email
+- Senha
+- Confirmação de senha (ou botão para tornar a senha visivel)
+- CPF
+
+-- Selecionar foto do perfil
+-- Habilitado/Desabilitado
+---- Nivel de acesso (0 - Admin, 1 - Politico, 2 - Acessor)
+---- (Se nivel = 2 exibe um campo: Vinculo politico (Select box que tras todos os politicos)
+
+VOTER
+- Nome
+- Sobrenome
+- Email
+- Confirmação de email
+- Senha
+- Confirmação de senha (ou botão para tornar a senha visivel)
+- CPF
+
+-- Selecionar foto do perfil
+-- Habilitado/Desabilitado
