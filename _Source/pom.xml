@@ -45,5 +45,14 @@
 		<version>1.0.0.Final</version>
 		<scope>provided</scope>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+	<dependency>
+	    <groupId>jstl</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
+	
+	
   </dependencies>
 </project>

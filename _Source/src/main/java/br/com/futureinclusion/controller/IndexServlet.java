@@ -1,6 +1,8 @@
 package br.com.futureinclusion.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,13 +18,10 @@ import java.util.List;
 /**
  * Servlet implementation class IndexServlet
  */
-@WebServlet("/index")
+@WebServlet(urlPatterns="/")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	public IndexServlet() {
-		super();
-	}
+	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		EntityManager entityManager = null;
@@ -43,20 +42,15 @@ public class IndexServlet extends HttpServlet {
 			countryDao.save(country3, true);
 			*/
 			//countryDao.delete(2, true);
-			
+			/*
 			Country country4 = new Country();
 			country4.setName("AGENTINA 1");
 			country4.setId(3);
 			countryDao.save(country4, true);
-			
-			String result = "X";
+			*/
 			List<Country> countries = countryDao.getAll();
-			for (Country country : countries) {
-				result += "<br/>PAIS: [" + country.getId() + "] " + country.getName();
-			}
-			
-			request.setAttribute("conteudo", result);
-			
+			request.setAttribute("countries", countries);
+//			request.setAttribute("countries", "AQUI");
 		} catch (Exception e) {
 			e.printStackTrace();
 			entityManager.getTransaction().rollback();
@@ -64,10 +58,7 @@ public class IndexServlet extends HttpServlet {
 			if (entityManager != null) {
 				entityManager.close();
 			}
-			//System.exit(0);
 		}
-
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/view/x.jsp").forward(request, response);
 	}
-
 }

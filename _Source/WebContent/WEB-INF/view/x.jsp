@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +9,11 @@
 <title>Future Inclusion</title>
 </head>
 <body>
-
-	${conteudo}
-
+	<h1>Listando Paises</h1>
+	<ul>
+	<c:forEach items="${countries}" var="country">
+		<li>${country.name}</li>
+	</c:forEach>
+	</ul>
 </body>
 </html>
