@@ -1,0 +1,7 @@
+@import '../css/bootstrap/bootstrap.min.css';
+@import 'reset.css';
+@import 'menu.css';
+
+@import 'login.css';
+@import 'cadastro.css';
+@import 'dash.css';

@@ -1,61 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Future Inclusion - Usuário</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../css/all.css">
+
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/jquery.validate.min.js"></script>
+        <script src="../assets/js/additional-methods.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Form de usuário</h1>
-        <form action="#" method="POST">
-            <div class="form">
-                <label class="label" for="firstName"></label>
-                <input class="input-group" type="text" name="firstName" id="firstName" placeholder="Digite seu nome" required>
-            </div>
-            <div class="form">
-                    <label class="label" for="lastName"></label>
-                    <input class="input-group" type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+        <nav class="navbar navbar-expand-xl navbar-dark">
+                <a class="navbar-brand" href="index.html">Future Inclusion</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Usuários
+                            </a>
+                            <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item active" href="#">Novo</a>
+                                <a class="dropdown-item" href="#">Listar</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Eleitores
+                            </a>
+                            <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Novo</a>
+                                <a class="dropdown-item" href="#">Listar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Meu perfil</a>
+                        </li>
+                    </ul>
                 </div>
-            <div class="form">
-                <label class="label" for="cpf"></label>
-                <input class="input-group" type="text" name="cpf" id="cpf" placeholder="CPF" required>
+        </nav>
+        <div class="container box-principal">
+            <div class="cadastro">
+                <div class="cadastro-form rounded">
+                    <form action="dashboard.html" id="form-cadastro">
+                        <h1 class="titulo-cadastro">Future Inclusion</h1>
+                        
+                        <div class="form-group">
+                            <label for="first-name">Primeiro Nome: </label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="first-nameHelp" placeholder="Primeiro nome" name="first-name" data-msg="Primeiro nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Sobrenome: </label>
+                            <input type="text" class="form-control" id="last-name" aria-describedby="last-nameHelp" placeholder="Sobrenome" name="last-name" data-msg="Sobrenome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cpf">CPF: </label>
+                            <input type="text" class="form-control" id="cpf" aria-describedby="cpfHelp" placeholder="Digite seu CPF" name="cpf" data-msg="Digite seu CPF" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail: </label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu E-mail" name="email" data-msg="Digite seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Confirme seu e-mail: </label>
+                            <input type="email-check" class="form-control" id="email-check" aria-describedby="email-checkHelp" placeholder="Confirme seu E-mail" name="email-check" data-msg="Confirme seu email" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Senha: </label>
+                            <input type="password" class="form-control" id="password" placeholder="Crie uma senha" name="password" data-msg="Crie uma senha" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-check">Confirme sua senha: </label>
+                            <input type="password" class="form-control" id="password-check" placeholder="Confirme sua senha" name="password-check" data-msg="Confirme a senha" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="image">Selecione uma foto</label>
+                            <input type="file" class="form-control" id="image" name="file"  placeholder="Selecione uma foto" data-msg="Selecione uma foto">
+                        </div>
+
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="enabled" id="enabled" autocomplete="off" checked> Habilitado
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="enabled" id="disabled" autocomplete="off"> Desabilitado
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="level">Tipo de usuário: </label>
+                            <select id="level" class="form-control" name="level" data-msg="Selecione o tipo de usuário" required/>
+                                <option value="0">Adminsitrador</option>
+                                <option value="1" selected>Politico</option>
+                                <option value="2">Acessoria</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar">
+                    </form>
+                </div>
             </div>
-            <div class="form">
-                <label class="label" for="email"></label>
-                <input class="input-group" type="text" name="email" id="email" placeholder="E-mail" required>
-            </div>
-            <div class="form">
-                <label class="label" for="email-check"></label>
-                <input class="input-group" type="text" name="email-check"  id="email-check" placeholder="Confirmação de e-mail" required>
-            </div>
-            <div class="form">
-                <label class="label" for="password"></label>
-                <input class="input-group" type="text" name="password" id="password" placeholder="Digite uma senha" required>
-            </div>
-            <div class="form">
-                <label class="label" for="password-check"></label>
-                <input class="input-group" type="text" name="password-check" id="password-check" placeholder="Confirme sua senha" required>
-            </div>
-            <div class="form">
-                <label class="label" for="file"></label>
-                <input class="input-group" type="file" name="file" id="file" placeholder="Selecione uma imagem">
-            </div>
-            <div class="form">
-                <label class="label" for="enabled"> Usuário Habilitado? </label>
-                <input class="input-group" type="checkbox" name="enabled" id="enabled">
-            </div>
-            <div class="form">
-                <label class="label" for="enabled"></label>
-                <select name="level">
-                    <option value="0">Administrador</option> 
-                    <option value="1" selected>Politico</option>
-                    <option value="2">Acessor</option>
-                </select>
-            </div>
-            <div class="submit-box">
-                <input id="submit-button" type="submit" value="Enviar">
-            </div>
-        </form>
+        </div>
     </body>
 </html>
