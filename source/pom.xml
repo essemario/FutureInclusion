@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.futureinclusion</groupId>
+	<artifactId>application</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies> 
+		<!-- Hibernate CORE --> 
+    	<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>RELEASE</version>
+	    </dependency>
+		
+		<!-- Javax.persistence -->
+		<dependency>
+	    	<groupId>org.eclipse.persistence</groupId>
+	    	<artifactId>javax.persistence</artifactId>
+	    	<version>RELEASE</version>
+		</dependency>
+		
+		<!-- MySQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		
+		<!-- 
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+	 	-->	
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.0.1</version>
+		    <scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+		<!-- 
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+ 		-->
+
+		<!-- Bootstrap -->
+		<!-- 
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.4.1</version>
+		</dependency>
+ 		-->
+  </dependencies>
+</project>
