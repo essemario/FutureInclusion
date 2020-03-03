@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/user_v2.css">
+        <link rel="stylesheet" href="../css/user.css">
         <link
             href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,900&display=swap"
             rel="stylesheet">
@@ -58,35 +58,70 @@
 
                 <!-- #2 -->
                 <div class="user-menu">
-                    <li class="menu-items">Editar meu perfil</li>
+                    <li class="menu-items">Ver meu perfil</li>
                 </div>
 
                 <!-- #3 -->
                 <div class="user-content">
-                    
-                    <div class="alt-profile">
-                        <p>Meu perfil</p>
-                    </div>
 
-                    <div class="user-name">
-                        <p>Nome completo</p>
-                    </div>
-
-                    <div class="user-id">
-                        <p>CPF</p>
-                    </div>                  
-                    
-                    <div class="user-email">
-                        <p>E-mail</p>
-                    </div>                    
-           
+                    <!--
                     <div class="valid-box">
                         <p>Verificação</p>
                     </div>
-           
+                    --->
+                    <div class="alt-profile">
+                        <p>Altere seus dados</p>
+                    </div>
+
+                    <!-- FORMS -->
+                    <form action="#" method="POST">
+
+                        <!-- EMAIL -->
+                        <div class="form">
+                            <label class="label" for="email"></label>
+                            <input class="input-group" type="text" id="email"
+                                name="email"
+                                placeholder="E-mail" required>
+                        </div>
+
+                        <div class="form">
+                            <label class="label" for="email"></label>
+                            <input class="input-group" type="text" id="email"
+                                name="email"
+                                placeholder="Confirme seu e-mail" required>
+                        </div>
+                        <!-- EMAIL -->
+
+                        <!-- SENHA -->
+                        <div class="form">
+                            <label class="label" for="pwd"></label>
+                            <input class="input-group" type="password" id="pwd"
+                                name="password"
+                                minlength="8" placeholder="Senha" required>
+                        </div>
+
+                        <div class="form">
+                            <label class="label" for="pwd"></label>
+                            <input class="input-group" type="password" id="pwd"
+                                name="password"
+                                minlength="8" placeholder="Confirme sua senha"
+                                required>
+                        </div>
+                        <!-- SENHA -->
+                    </form>
+                    <!-- FORMS EMAIL/SENHA-->
+
+                    <!-- BOTÃO ENVIAR -->
+                    <div class="button-alt-box">
+                        <button type="button" class="button-alt">
+                            Enviar
+                        </button>
+                    </div>
+                    
                 </div>
 
-            </div>            
+            </div>
+            <!-- DIV PROFILE USER DIVIDIDO EM 4 PARTES-->
 
             <!-- DIVS VAZIAS -->
             <!-- JAMAIS OUSE ENCOSTAR AQUI -->

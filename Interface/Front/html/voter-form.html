@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Future Inclusion - Usuário</title>
+    </head>
+    <body>
+        <h1>Form de Eleitor</h1>
+        <form action="#" method="POST">
+            <div class="form">
+                <label class="label" for="firstName"></label>
+                <input class="input-group" type="text" name="firstName" id="firstName" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form">
+                    <label class="label" for="lastName"></label>
+                    <input class="input-group" type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required>
+                </div>
+            <div class="form">
+                <label class="label" for="cpf"></label>
+                <input class="input-group" type="text" name="cpf" id="cpf" placeholder="CPF" required>
+            </div>
+            <div class="form">
+                <label class="label" for="email"></label>
+                <input class="input-group" type="text" name="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="form">
+                <label class="label" for="email-check"></label>
+                <input class="input-group" type="text" name="email-check"  id="email-check" placeholder="Confirmação de e-mail" required>
+            </div>
+            <div class="form">
+                <label class="label" for="password"></label>
+                <input class="input-group" type="text" name="password" id="password" placeholder="Digite uma senha" required>
+            </div>
+            <div class="form">
+                <label class="label" for="password-check"></label>
+                <input class="input-group" type="text" name="password-check" id="password-check" placeholder="Confirme sua senha" required>
+            </div>
+            <div class="form">
+                <label class="label" for="file"></label>
+                <input class="input-group" type="file" name="file" id="file" placeholder="Selecione uma imagem">
+            </div>
+            <div class="form">
+                <label class="label" for="enabled"> Usuário Habilitado? </label>
+                <input class="input-group" type="checkbox" name="enabled" id="enabled">
+            </div>
+            <div class="form">
+                <label class="label" for="enabled"></label>
+                <select name="level">
+                    <option value="0">Administrador</option> 
+                    <option value="1" selected>Politico</option>
+                    <option value="2">Acessor</option>
+                </select>
+            </div>
+            <div class="submit-box">
+                <input id="submit-button" type="submit" value="Enviar">
+            </div>
+        </form>
+    </body>
+</html>
