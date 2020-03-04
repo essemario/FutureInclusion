@@ -1,0 +1,24 @@
+.jumbotron {
+    background-color: rgb(5, 61, 114);
+    color: white;
+}
+.login {
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-form {
+    width: 100%;
+}
+
+.login-link {
+    width: 100%;
+    text-align: center;
+}
+
+.login-link a {
+    color: white;
+}}

@@ -31,6 +31,10 @@ public class Image implements Serializable {
 
 	public Image() {
 	}
+	
+	public Image(int id) {
+		this.setId(id);
+	}
 
 	public int getId() {
 		return this.id;
