@@ -11,15 +11,18 @@ namespace FutureInclusion.DataAccessLayer.Models
         [Column("id", TypeName = "int(10) unsigned")]
         public uint Id { get; set; }
         
+        [Display(Name="Nome")]
         [Required(ErrorMessage = "Primeiro nome obrigatório")]
         [Column("name", TypeName = "varchar(255)")]
         public string Name { get; set; }
 
+        [Display(Name = "E-mail")]
         [Required(ErrorMessage = "Email obrigatório")]
         [Column("email", TypeName = "varchar(100)")]
         [EmailAddress(ErrorMessage = "Digite um email válido")]
         public string Email { get; set; }
 
+        [Display(Name = "Sobrenome")]
         [Required]
         [Column("last_name", TypeName = "varchar(255)")]
         public string LastName { get; set; }

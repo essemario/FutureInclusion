@@ -23,7 +23,8 @@ namespace FutureInclusion.Web.Controllers
 
         public IActionResult Index()
         {
-            return View(mySQLContext.User.First());
+            //return View(mySQLContext.User.First());
+            return RedirectToAction("Index", "Users");
         }
 
         public IActionResult Privacy()
