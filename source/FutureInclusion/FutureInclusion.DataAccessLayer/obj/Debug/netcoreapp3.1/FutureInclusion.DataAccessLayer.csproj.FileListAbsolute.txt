@@ -9,3 +9,4 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.genruntimeconfig.cache
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.csprojAssemblyReference.cache

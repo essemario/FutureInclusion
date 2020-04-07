@@ -13,7 +13,6 @@ namespace FutureInclusion.DataAccessLayer.Models
         public virtual DbSet<Choice> Choice { get; set; }
         public virtual DbSet<City> City { get; set; }
         public virtual DbSet<Country> Country { get; set; }
-        public virtual DbSet<Image> Image { get; set; }
         public virtual DbSet<Mandate> Mandate { get; set; }
         public virtual DbSet<MandateVoter> MandateVoter { get; set; }
         public virtual DbSet<Poll> Poll { get; set; }
@@ -79,18 +78,6 @@ namespace FutureInclusion.DataAccessLayer.Models
                     .IsUnique();
 
                 entity.Property(e => e.Name)
-                    .HasCharSet("latin1")
-                    .HasCollation("latin1_swedish_ci");
-            });
-
-            modelBuilder.Entity<Image>(entity =>
-            {
-                entity.HasIndex(e => e.Id)
-                    .HasName("id_UNIQUE")
-                    .IsUnique();
-
-                entity.Property(e => e.Url)
-                    .HasComment("(public url to access the image)")
                     .HasCharSet("latin1")
                     .HasCollation("latin1_swedish_ci");
             });

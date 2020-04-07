@@ -11,29 +11,42 @@ namespace FutureInclusion.DataAccessLayer.Models
         [Column("id", TypeName = "int(10) unsigned")]
         public uint Id { get; set; }
         
-        [Display(Name="Nome")]
         [Required(ErrorMessage = "Primeiro nome obrigatório")]
+        [Display(Name = "Nome")]
+        [StringLength(100, MinimumLength = 3, ErrorMessage = "Insira entre 3 e 100 carateres")]
         [Column("name", TypeName = "varchar(255)")]
         public string Name { get; set; }
 
-        [Display(Name = "E-mail")]
         [Required(ErrorMessage = "Email obrigatório")]
-        [Column("email", TypeName = "varchar(100)")]
+        [Display(Name = "E-mail")]
         [EmailAddress(ErrorMessage = "Digite um email válido")]
+        [Column("email", TypeName = "varchar(100)")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage ="Informe um sobrenome")]
         [Display(Name = "Sobrenome")]
-        [Required]
+        [StringLength(100, MinimumLength = 3, ErrorMessage = "Insira entre 3 e 100 carateres")]
         [Column("last_name", TypeName = "varchar(255)")]
         public string LastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Informe uma senha")]
+        [Display(Name="Senha")]
+        [StringLength(18, ErrorMessage = "A senha deve ter até {0} e no minimo {2} caracteres.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
         [Column("password", TypeName = "varchar(255)")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Informe um nivel")]
+        [Display(Name = "Nivel de acesso")]
         [Column("level", TypeName = "tinyint(1) unsigned")]
         public byte Level { get; set; }
+
+        [Required(ErrorMessage = "Informe o estado deste Usuario (Habilitado/Não Habilitado")]
+        [Display(Name = "Estado")]
         [Column("enabled")]
         public bool? Enabled { get; set; }
+
+        [Display(Name = "Mandato")]
         [Column("MANDATE_id", TypeName = "int(10) unsigned")]
         public uint? MandateId { get; set; }
 

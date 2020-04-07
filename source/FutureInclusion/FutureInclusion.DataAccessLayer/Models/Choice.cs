@@ -15,9 +15,15 @@ namespace FutureInclusion.DataAccessLayer.Models
         [Key]
         [Column("id", TypeName = "int(10) unsigned")]
         public uint Id { get; set; }
-        [Required]
+        
+        [Required(ErrorMessage = "Digite um texto para a alternativa.")]
+        [Display(Name = "Texto")]
+        [StringLength(255, MinimumLength = 3, ErrorMessage = "Insira entre 3 e 255 carateres")]
         [Column("text", TypeName = "text")]
         public string Text { get; set; }
+
+        [Required(ErrorMessage = "Selecione uma pergunta")]
+        [Display(Name = "Pergunta")]
         [Column("POLL_id", TypeName = "int(10) unsigned")]
         public uint PollId { get; set; }
 
