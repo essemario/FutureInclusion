@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureInclusion.Web", "FutureInclusion.Web\FutureInclusion.Web.csproj", "{669C7C9B-EE8C-4CB6-B9A8-A25EC0E15F54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureInclusion.DataAccessLayer", "FutureInclusion.DataAccessLayer\FutureInclusion.DataAccessLayer.csproj", "{0E5C2307-8516-429F-B2DB-76774E58695F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{669C7C9B-EE8C-4CB6-B9A8-A25EC0E15F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{669C7C9B-EE8C-4CB6-B9A8-A25EC0E15F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{669C7C9B-EE8C-4CB6-B9A8-A25EC0E15F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5C2307-8516-429F-B2DB-76774E58695F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5C2307-8516-429F-B2DB-76774E58695F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5C2307-8516-429F-B2DB-76774E58695F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5C2307-8516-429F-B2DB-76774E58695F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
