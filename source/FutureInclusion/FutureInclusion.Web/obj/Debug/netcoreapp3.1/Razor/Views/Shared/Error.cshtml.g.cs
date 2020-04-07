@@ -26,8 +26,15 @@ using FutureInclusion.Web.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\Views\_ViewImports.cshtml"
+using FutureInclusion.DataAccessLayer.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"099f2f84834f2d86e4b7e30a25e6c8903803ba62", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"73e3c67a4f4e3e65fb1e6775560c032d6833e240", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

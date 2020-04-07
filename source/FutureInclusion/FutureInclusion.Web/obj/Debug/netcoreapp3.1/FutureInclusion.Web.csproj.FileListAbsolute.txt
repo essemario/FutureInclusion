@@ -35,3 +35,14 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.pdb
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.genruntimeconfig.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.csproj.CopyComplete
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb

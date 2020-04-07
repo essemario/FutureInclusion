@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FutureInclusion.Web.Models;
+using FutureInclusion.DataAccessLayer.Models;
 
 namespace FutureInclusion.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly MySQLContext mySQLContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, MySQLContext db)
         {
             _logger = logger;
+            mySQLContext = db;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(mySQLContext.User.First());
         }
 
         public IActionResult Privacy()
