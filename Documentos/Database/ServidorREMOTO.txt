@@ -6,3 +6,9 @@ p: "mochilas123"
 
 u: "chapela_add1"
 p: "javaaccess3"
+
+Pomelo.EntityFrameworkCore.MySql
+
+Server=mysql.chapela.com.br;Database=chapela;Uid=chapela;Pwd=mochilas123;
+
+dotnet ef dbcontext scaffold Server=mysql.chapela.com.br;Database=chapela;Uid=chapela;Pwd=mochilas123; Pomelo.EntityFrameworkCore.MySql -o .\Models
