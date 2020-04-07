@@ -37,7 +37,7 @@ namespace FutureInclusion.DataAccessLayer.Models
 
         [Required(ErrorMessage = "Informe uma senha")]
         [Display(Name = "Senha")]
-        [StringLength(18, ErrorMessage = "A senha deve ter até {0} e no minimo {2} caracteres.", MinimumLength = 6)]
+        [StringLength(18, ErrorMessage = "A {0} deve ter no minimo {2} caracteres.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Column("password", TypeName = "varchar(255)")]
         public string Password { get; set; }

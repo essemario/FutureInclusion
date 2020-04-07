@@ -31,7 +31,7 @@ namespace FutureInclusion.DataAccessLayer.Models
 
         [Required(ErrorMessage = "Informe uma senha")]
         [Display(Name="Senha")]
-        [StringLength(18, ErrorMessage = "A senha deve ter até {0} e no minimo {2} caracteres.", MinimumLength = 6)]
+        [StringLength(18, ErrorMessage = "A {0} deve ter no minimo {2} caracteres.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Column("password", TypeName = "varchar(255)")]
         public string Password { get; set; }
@@ -50,6 +50,7 @@ namespace FutureInclusion.DataAccessLayer.Models
         [Column("MANDATE_id", TypeName = "int(10) unsigned")]
         public uint? MandateId { get; set; }
 
+        [Display(Name = "Mandato")]
         [ForeignKey(nameof(MandateId))]
         [InverseProperty("User")]
         public virtual Mandate Mandate { get; set; }

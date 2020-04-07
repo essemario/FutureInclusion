@@ -29,6 +29,7 @@ namespace FutureInclusion.DataAccessLayer.Models
         public uint CountryId { get; set; }
 
         [ForeignKey(nameof(CountryId))]
+        [Display(Name = "Pais")]
         [InverseProperty("State")]
         public virtual Country Country { get; set; }
         [InverseProperty("State")]

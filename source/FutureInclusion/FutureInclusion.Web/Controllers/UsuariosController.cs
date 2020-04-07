@@ -9,11 +9,11 @@ using FutureInclusion.DataAccessLayer.Models;
 
 namespace FutureInclusion.Web.Controllers
 {
-    public class UsersController : Controller
+    public class UsuariosController : Controller
     {
         private readonly MySQLContext _context;
 
-        public UsersController(MySQLContext context)
+        public UsuariosController(MySQLContext context)
         {
             _context = context;
         }

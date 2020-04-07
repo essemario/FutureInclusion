@@ -69,18 +69,26 @@ namespace FutureInclusion.DataAccessLayer.Models
         [Column("COUNTRY_id", TypeName = "int(10) unsigned")]
         public uint CountryId { get; set; }
 
+        [Display(Name = "Cidade")]
         [ForeignKey(nameof(CityId))]
         [InverseProperty("Mandate")]
         public virtual City City { get; set; }
+        
         [ForeignKey(nameof(CountryId))]
+        [Display(Name = "Pais")]
         [InverseProperty("Mandate")]
         public virtual Country Country { get; set; }
+        
         [ForeignKey(nameof(PowerId))]
+        [Display(Name = "Poder")]
         [InverseProperty("Mandate")]
         public virtual Power Power { get; set; }
+        
         [ForeignKey(nameof(StateId))]
+        [Display(Name = "Estado")]
         [InverseProperty("Mandate")]
         public virtual State State { get; set; }
+        
         [InverseProperty("Mandates")]
         public virtual ICollection<MandateVoter> MandateVoter { get; set; }
         [InverseProperty("Mandate")]

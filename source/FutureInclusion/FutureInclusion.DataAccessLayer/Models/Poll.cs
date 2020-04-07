@@ -51,8 +51,10 @@ namespace FutureInclusion.DataAccessLayer.Models
         public uint MandateId { get; set; }
 
         [ForeignKey(nameof(MandateId))]
+        [Display(Name = "Mandato")]
         [InverseProperty("Poll")]
         public virtual Mandate Mandate { get; set; }
+        
         [InverseProperty("Poll")]
         public virtual ICollection<Choice> Choice { get; set; }
         [InverseProperty("Poll")]

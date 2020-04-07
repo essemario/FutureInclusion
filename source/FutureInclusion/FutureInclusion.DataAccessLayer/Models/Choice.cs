@@ -27,6 +27,7 @@ namespace FutureInclusion.DataAccessLayer.Models
         [Column("POLL_id", TypeName = "int(10) unsigned")]
         public uint PollId { get; set; }
 
+        [Display(Name = "Pergunta")]
         [ForeignKey(nameof(PollId))]
         [InverseProperty("Choice")]
         public virtual Poll Poll { get; set; }

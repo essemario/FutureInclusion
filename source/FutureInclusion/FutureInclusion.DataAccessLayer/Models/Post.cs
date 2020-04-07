@@ -32,9 +32,12 @@ namespace FutureInclusion.DataAccessLayer.Models
         public uint MandateId { get; set; }
 
         [ForeignKey(nameof(MandateId))]
+        [Display(Name = "Mandate")]
         [InverseProperty("Post")]
         public virtual Mandate Mandate { get; set; }
+        
         [ForeignKey(nameof(PollId))]
+        [Display(Name = "Pergunta")]
         [InverseProperty("Post")]
         public virtual Poll Poll { get; set; }
     }

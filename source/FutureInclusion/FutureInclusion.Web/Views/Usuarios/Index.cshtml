@@ -47,7 +47,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr class='tabela-linha-clicavel' data-href="@Url.Action("Edit", "Users", new { id = item.Id})">
+        <tr class='tabela-linha-clicavel' data-href="@Url.Action("Edit", "Usuarios", new { id = item.Id})">
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -80,10 +80,10 @@
                 }
             </td>
             <td class="td-acaoes">
-                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
 
                 <a href="#" class="btn btn-danger" 
-                   data-href="@Url.Action("Delete", "Users", new { id = item.Id})"
+                   data-href="@Url.Action("Delete", "Usuarios", new { id = item.Id})"
                    data-toggle="modal" data-target="#confirm-delete">
                     Excluir
                 </a>

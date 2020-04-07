@@ -28,6 +28,7 @@ namespace FutureInclusion.DataAccessLayer.Models
         public uint StateId { get; set; }
 
         [ForeignKey(nameof(StateId))]
+        [Display(Name = "Estado")]
         [InverseProperty("City")]
         public virtual State State { get; set; }
         [InverseProperty("City")]

@@ -28,6 +28,7 @@ namespace FutureInclusion.DataAccessLayer.Models
         public uint SphereId { get; set; }
 
         [ForeignKey(nameof(SphereId))]
+        [Display(Name = "Esfera")]
         [InverseProperty("Power")]
         public virtual Sphere Sphere { get; set; }
         [InverseProperty("Power")]
