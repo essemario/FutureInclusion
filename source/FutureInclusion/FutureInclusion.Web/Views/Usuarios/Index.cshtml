@@ -1,22 +1,10 @@
 ﻿@model IEnumerable<FutureInclusion.DataAccessLayer.Models.User>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listar Usuários";
 }
 
-<h1> Listagem de Usuários </h1>
-<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">!ATENÇÃO!</div>
-            <div class="modal-body">Tem certeza que deseja deletar este registro?</div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-danger btn-ok">DELETAR</a>
-            </div>
-        </div>
-    </div>
-</div>
+<h1> Listagem</h1>
 <table class="table">
     <thead>
         <tr>
@@ -47,7 +35,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr class='tabela-linha-clicavel' data-href="@Url.Action("Edit", "Usuarios", new { id = item.Id})">
+        <tr class='tabela-linha-clicavel' data-href="@Url.Action("Edit", ViewContext.RouteData.Values["Controller"].ToString(), new { id = item.Id })">
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -72,7 +60,7 @@
                 {
                     @("Desabilitado");
                 }
-                </td>
+            </td>
             <td>
                 @if (item.Mandate != null)
                 {
@@ -82,8 +70,8 @@
             <td class="td-acaoes">
                 <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
 
-                <a href="#" class="btn btn-danger" 
-                   data-href="@Url.Action("Delete", "Usuarios", new { id = item.Id})"
+                <a href="#" class="btn btn-danger"
+                   data-href="@Url.Action("Delete", ViewContext.RouteData.Values["Controller"].ToString(), new { id = item.Id})"
                    data-toggle="modal" data-target="#confirm-delete">
                     Excluir
                 </a>
@@ -92,17 +80,3 @@
         }
     </tbody>
 </table>
-
-@section Scripts {
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.tabela-linha-clicavel').on('click', 'td:not(.td-acaoes)', function () {
-                window.location = $('.tabela-linha-clicavel').data("href");
-            });
-
-            $('#confirm-delete').on('show.bs.modal', function (e) {
-                $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
-            });
-        });
-    </script>
-}

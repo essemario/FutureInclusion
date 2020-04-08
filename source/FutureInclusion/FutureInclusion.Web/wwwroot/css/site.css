@@ -25,8 +25,21 @@ a {
 }*/
 
 .navbar {
-    background-color: rgb(5, 61, 114);
     font-size: 1.22rem;
+    
+    padding: 0rem;
+    margin-bottom: 2rem;
+}
+.dropdown .dropdown-menu {
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        border-radius: 0;
+    }
 }
 
 /* Sticky footer styles

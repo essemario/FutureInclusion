@@ -1,0 +1,89 @@
+﻿@model IEnumerable<FutureInclusion.DataAccessLayer.Models.Mandate>
+
+@{
+    ViewData["Title"] = "Listar Mandatos";
+}
+
+    <h1>Listagem</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Validated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Power)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class='tabela-linha-clicavel' data-href="@Url.Action("Edit", ViewContext.RouteData.Values["Controller"].ToString(), new { id = item.Id })">
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Validated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValidatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Power.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State.Name)
+            </td>
+            <td class="td-acaoes">
+                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+
+                <a href="#" class="btn btn-danger"
+                   data-href="@Url.Action("Delete", ViewContext.RouteData.Values["Controller"].ToString(), new { id = item.Id})"
+                   data-toggle="modal" data-target="#confirm-delete">
+                    Excluir
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

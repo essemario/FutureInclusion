@@ -1,0 +1,53 @@
+﻿@model IEnumerable<FutureInclusion.DataAccessLayer.Models.Post>
+
+@{
+    ViewData["Title"] = "Listar Postagens";
+}
+
+    <h1>Listagem</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mandate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Poll)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class='tabela-linha-clicavel' data-href="@Url.Action("Edit", ViewContext.RouteData.Values["Controller"].ToString(), new { id = item.Id })">
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mandate.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Poll.Description)
+            </td>
+            <td class="td-acaoes">
+                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+
+                <a href="#" class="btn btn-danger"
+                   data-href="@Url.Action("Delete", ViewContext.RouteData.Values["Controller"].ToString(), new { id = item.Id})"
+                   data-toggle="modal" data-target="#confirm-delete">
+                    Excluir
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

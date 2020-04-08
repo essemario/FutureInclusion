@@ -9,35 +9,136 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand @((ViewContext.RouteData.Values["Controller"].ToString() == "Home" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Future Inclusion</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="navbar-toggler-right">
+                <a class="navbar-brand ml-3" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span class="">Future Inclusion </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle @((ViewContext.RouteData.Values["Controller"].ToString() == "Usuarios")? "active" : "")" asp-area="" asp-controller="Usuarios" asp-action="Index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuários</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Usuarios" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Usuarios" asp-action="Create">Novo</a>
-                                <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Usuarios" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Usuarios" asp-action="Index">Listar</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Voters" asp-action="Index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eleitores</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Voters" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Voters" asp-action="Create">Novo</a>
-                                <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Voters" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Voters" asp-action="Index">Listar</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-column " id="navbar">
+                <ul class="navbar-nav  w-100 justify-content-center px-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Usuarios")? "active" : "")" asp-area="" asp-controller="Usuarios" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Usuários
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Usuarios" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Usuarios" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Usuarios" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Usuarios" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Eleitores")? "active" : "")" asp-area="" asp-controller="Eleitores" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Eleitores
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Eleitores" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Eleitores" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Eleitores" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Eleitores" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Paises")? "active" : "")" asp-area="" asp-controller="Paises" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Paises
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Paises" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Paises" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Paises" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Paises" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Estados")? "active" : "")" asp-area="" asp-controller="Estados" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Estados
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Estados" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Estados" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Estados" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Estados" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Cidades")? "active" : "")" asp-area="" asp-controller="Cidades" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Cidades" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Cidades" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Cidades" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Cidades" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Esferas")? "active" : "")" asp-area="" asp-controller="Esferas" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Esferas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Esferas" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Esferas" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Esferas" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Esferas" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  w-100 justify-content-center px-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Poderes")? "active" : "")" asp-area="" asp-controller="Poderes" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Poderes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Poderes" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Poderes" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Poderes" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Poderes" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Postagens")? "active" : "")" asp-area="" asp-controller="Postagens" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Postagens
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Postagens" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Postagens" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Postagens" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Postagens" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Pesquisas")? "active" : "")" asp-area="" asp-controller="Pesquisas" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pesquisas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Pesquisas" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Pesquisas" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Pesquisas" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Pesquisas" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Escolhas")? "active" : "")" asp-area="" asp-controller="Escolhas" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Escolhas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Escolhas" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Escolhas" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Escolhas" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Escolhas" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  @((ViewContext.RouteData.Values["Controller"].ToString() == "Mandatos")? "active" : "")" asp-area="" asp-controller="Mandatos" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mandatos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Mandatos" && ViewContext.RouteData.Values["Action"].ToString() == "Create")? "active" : "")" asp-area="" asp-controller="Mandatos" asp-action="Create">Novo</a>
+                            <a class="dropdown-item @((ViewContext.RouteData.Values["Controller"].ToString() == "Mandatos" && ViewContext.RouteData.Values["Action"].ToString() == "Index")? "active" : "")" asp-area="" asp-controller="Mandatos" asp-action="Index">Listar</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">!ATENÇÃO!</div>
+                        <div class="modal-body">Tem certeza que deseja deletar este registro?</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-danger btn-ok">DELETAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             @RenderBody()
         </main>
     </div>

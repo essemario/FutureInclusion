@@ -1,0 +1,47 @@
+﻿@model FutureInclusion.DataAccessLayer.Models.Post
+
+@{
+    ViewData["Title"] = "Editar Postagem";
+}
+
+<h4>Editar Postagem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PollId" class="control-label"></label>
+                <select asp-for="PollId" class="form-control" asp-items="ViewBag.PollId"></select>
+                <span asp-validation-for="PollId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MandateId" class="control-label"></label>
+                <select asp-for="MandateId" class="form-control" asp-items="ViewBag.MandateId"></select>
+                <span asp-validation-for="MandateId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar para a listagem</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
