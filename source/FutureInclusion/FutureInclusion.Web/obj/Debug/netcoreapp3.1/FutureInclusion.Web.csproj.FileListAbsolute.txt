@@ -139,8 +139,6 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.csprojAssemblyReference.cache
-E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.csproj.CoreCompileInputs.cache
-E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.MvcApplicationPartsAssemblyInfo.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.RazorAssemblyInfo.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.RazorAssemblyInfo.cs
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.AssemblyInfoInputs.cache
@@ -197,3 +195,8 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.pdb
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.genruntimeconfig.cache
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.csproj.CoreCompileInputs.cache
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.MvcApplicationPartsAssemblyInfo.cache

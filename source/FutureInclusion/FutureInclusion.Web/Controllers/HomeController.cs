@@ -27,11 +27,6 @@ namespace FutureInclusion.Web.Controllers
             return RedirectToAction("Index", "Usuarios");
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
