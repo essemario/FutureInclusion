@@ -1,0 +1,1724 @@
+{
+	"info": {
+		"_postman_id": "22e1737e-a8a9-42f7-99a0-0d251d2f38f5",
+		"name": "FutureInlcusion",
+		"description": "CRUD de todos os recursos do app FutureInclusion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cidades",
+			"item": [
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Piracicaba\",\r\n    \"stateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"São Paulo\",\r\n    \"stateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/14",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de cidades",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "90dac2aa-bd1b-4d55-a319-40f7cc11050e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Cidades\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a79ae368-08e6-4d07-a78e-dd9803f7b2dd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Eleitores",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"João José\",\r\n    \"lastName\": \"Augusto\",\r\n    \"email\": \"jj@aug.com\",\r\n    \"password\": \"123456\",\r\n    \"document\": \"789044\",\r\n    \"enabled\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"3\",\r\n    \"name\": \"João IDIOTA\",\r\n    \"lastName\": \"Augusto\",\r\n    \"email\": \"jj@aug.com\",\r\n    \"password\": \"123456\",\r\n    \"document\": \"789044\",\r\n    \"enabled\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de Eleitores",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2e0d9183-f9f6-42a0-bf5c-b2cfd4b71394",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Eleitores\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "dd1886f1-38b5-419a-bbd8-8c9a7f33f5c7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Escolhas",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"Òtimaaaaaaaaaaaaa\",\r\n    \"pollId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"5\",\r\n    \"text\": \"ÒtimOOOOOOOOOOOO\",\r\n    \"pollId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de Escolhas",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "512715ef-d75f-4f09-ab09-2b9d091c48b4",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Escolhas\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "15127e5f-503d-4ab6-9422-8f044651e23d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Esferas",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PLANETÁRIO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"4\",\r\n    \"name\": \"GALATICO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de esferas",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c11077a6-e790-49c8-ab40-13992bd14797",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Esferas\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b6804e12-90fe-45b9-aa92-4b89de037d09",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Estados",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mega Estado\",\r\n    \"countryId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"7\",\r\n    \"name\": \"Mega Estado Nacional\",\r\n    \"countryId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de estados",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c059c78c-dff5-4800-a6d9-45e63629b838",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Estados\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "9bdecfc7-f5f5-428e-93f3-9fdfc592b9fc",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Mandatos",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2021-01-01T00:00:00\",\r\n    \"endDate\": \"2024-12-31T00:00:00\",\r\n    \"title\": \"LIDER SUPREMO\",\r\n    \"active\": false,\r\n    \"validated\": true,\r\n    \"validatedDate\": \"2020-04-07T00:00:00\",\r\n    \"powerId\": 1,\r\n    \"cityId\": 1,\r\n    \"stateId\": 1,\r\n    \"countryId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"4\",\r\n    \"startDate\": \"2021-01-01T00:00:00\",\r\n    \"endDate\": \"2024-12-31T00:00:00\",\r\n    \"title\": \"LIDER SUPREMO DO UNIVERSO\",\r\n    \"active\": false,\r\n    \"validated\": true,\r\n    \"validatedDate\": \"2020-04-07T00:00:00\",\r\n    \"powerId\": 1,\r\n    \"cityId\": 1,\r\n    \"stateId\": 1,\r\n    \"countryId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de Mandatos",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "aadccde1-ca46-4e45-81b6-d3f1482b3617",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Mandatos\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e1f92aa0-184c-4ae0-8874-d2f5fdaad785",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Paises",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Alemanha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"4\",\r\n    \"name\": \"Germany\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de paises",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "da773414-47e6-4958-b1bf-53146f3541a6",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Paises\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "db90dbaa-71e5-4689-8350-724937aea63d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pesquisas",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Futuro\",\r\n    \"start\": \"2020-04-07T00:00:00\",\r\n    \"end\": \"2020-12-22T23:59:00\",\r\n    \"description\": \"O que esperar do amanhã?\",\r\n    \"tag\": \"futuro\",\r\n    \"mandateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"2\",\r\n    \"name\": \"O Futuro chegou\",\r\n    \"start\": \"2020-04-07T00:00:00\",\r\n    \"end\": \"2020-12-22T23:59:00\",\r\n    \"description\": \"O que esperar do amanhã?\",\r\n    \"tag\": \"futuro\",\r\n    \"mandateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de pesquisas",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "50cc3e3d-9e18-41c5-854d-41a586990e59",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Pesquisas\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8b1a4150-61ac-41d5-bc5c-90de0bb176a7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Poderes",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Imperial\",\r\n    \"sphereId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"9\",\r\n    \"name\": \"Universal\",\r\n    \"sphereId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de poderes",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7515a347-d3c8-487c-89a7-7bb7e5a37bae",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Poderes\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d449d19b-75d1-4206-9963-4fb2f68859e6",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Postagens",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"Bem vindo ao FUTURO\",\r\n    \"date\": \"2020-04-07T22:00:00\",\r\n    \"pollId\": 1,\r\n    \"mandateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"3\",\r\n    \"text\": \"Bem vindo ao FUTURO, HOJE!\",\r\n    \"date\": \"2020-04-07T22:00:00\",\r\n    \"pollId\": 1,\r\n    \"mandateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de postagens",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8a064f20-a236-4f7d-a3eb-53ec7d3a5a36",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Postagens\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "cd4396a3-5326-460b-90af-3a64426ab30f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pedro Auguso\",\r\n    \"email\": \"pa@gmail.com\",\r\n    \"lastName\": \"Heleno\",\r\n    \"password\": \"123456\",\r\n    \"level\": 1,\r\n    \"enabled\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"10\",\r\n    \"name\": \"Pedro AuguTo\",\r\n    \"email\": \"pa@gmail.com\",\r\n    \"lastName\": \"Heleno\",\r\n    \"password\": \"123456\",\r\n    \"level\": 1,\r\n    \"enabled\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{recurso}}/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{recurso}}/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{recurso}}",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD de usuarios",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "85ef7b78-92ba-4129-a92f-1846d3fbbe45",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"recurso\", \"Usuarios\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a1bfef2d-7e39-49d2-b694-4e259eade54b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "101cf3bf-4bf8-4e6f-b9cc-6355596ab280",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3ebc8f3f-bbcb-4e74-ab9f-9d3140a269e3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "366f4b4a-fc56-421c-a501-6c6f1be0cdc5",
+			"key": "url",
+			"value": "https://futureinclusionwebv1.azurewebsites.net/api",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
