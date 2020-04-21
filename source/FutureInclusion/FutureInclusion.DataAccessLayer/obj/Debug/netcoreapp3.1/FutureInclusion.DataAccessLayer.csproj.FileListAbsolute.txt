@@ -3,10 +3,10 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.runtimeconfig.dev.json
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.csprojAssemblyReference.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.csproj.CoreCompileInputs.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.AssemblyInfoInputs.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.AssemblyInfo.cs
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.genruntimeconfig.cache
-E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.csprojAssemblyReference.cache
