@@ -6,30 +6,72 @@ export default StyleSheet.create({
         flex: 1,
         paddingHorizontal: 16,
         paddingTop: Constants.statusBarHeight + 20,
+    },
+    
+     politicalProfile: {
+        alignItems: 'center',
      },
 
-     header: {
+     avatar: {
+        width: 120,
+        height: 120,
+        borderRadius: 60,
+        marginRight: 12,
+     },
+
+     personalText: {
+        alignItems: 'center',
+     },
+    
+     politicalName: {
+         fontSize: 24,
+         color: '#41414d',
+         fontWeight: 'bold',
+     },
+
+     politicalOffice: {
+        fontSize: 18,
+        color: '#00B0F0',
+        fontWeight: 'bold',
+     },
+
+     socialInteraction: {
+         marginTop: 12,
+         marginBottom: 12, 
          flexDirection: 'row',
          justifyContent: 'space-between',
-         alignItems: 'center',
      },
 
-     headerIcons:{
+     followers: {
         flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 16,
      },
 
-     logout :{
-         alignItems: 'center',
-         marginLeft: 30,
-         marginRight: 8
+     followersText: {
+        marginLeft: 8,
      },
 
-     profile: {
-         alignItems: 'center',
+     follow: {
+        alignItems: 'center',
+        backgroundColor: '#2c3b79',
+        paddingHorizontal: 4,
+        paddingVertical: 1,
+        borderRadius: 8,
      },
 
-     postList: {
-        marginTop: 32,
+     followText: {
+        color: '#fff' ,
+     },
+
+     answers: {
+         flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 16,
+     },
+
+     answersText: {
+        marginLeft: 8,
      },
 
      post: {
@@ -39,32 +81,7 @@ export default StyleSheet.create({
         marginBottom: 16,
      }, 
 
-     personal: {
-        flexDirection: 'row',
-        alignItems: 'center',
-     },
-
-     avatar: {
-        width: 60,
-        height: 60,
-        borderRadius: 30,
-        marginRight: 12,
-     },
-    
-     politicalName: {
-         fontSize: 18,
-         color: '#41414d',
-         fontWeight: 'bold',
-     },
-
-     politicalOffice: {
-        fontSize: 12,
-        color: '#00B0F0',
-        fontWeight: 'bold',
-     },
-
      title: {
-        marginTop: 8,
         marginBottom: 4,
         fontSize: 16,
         color: '#41414d',

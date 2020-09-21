@@ -1,74 +1,70 @@
 import React from 'react';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
+import { View, FlatList, TouchableOpacity, Image, Text } from 'react-native';
 
-import logoImg from '../../assets/logo.png';
 
 import styles from './styles';
 
-export default function Feed() {
+export default function Political() {
     const navigation = useNavigation();
+
+    function navigateToFeed() {
+        navigation.navigate('Feed');
+    };
 
     function navigateToProfile() {
         navigation.navigate('Profile');
     };
 
-    function navigateToPolitical() {
-        navigation.navigate('Political');
-    };
-
-    function navigateToLogin() {
-        navigation.navigate('Login');
-    };
-
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <Image source={logoImg} style={styles.image} />
-                <View style={styles.headerIcons}> 
+        <View style={styles.container}> 
+            <View style={styles.politicalProfile}>
+                <Image
+                    style={styles.avatar}
+                    source={{
+                    uri:
+                        'https://www.cartacapital.com.br/wp-content/uploads/2020/04/Jair-Bolsonaro-Foto-EVARISTO-SA-_-AFP.jpg',
+                    }}
+                />
+                <View style={styles.personalText}>
+                    <Text style={styles.politicalName}>Jair Messias Bolsonaro </Text>
+                    <Text style={styles.politicalOffice}>Presidente </Text>
                     <TouchableOpacity
-                        style={styles.profile}
-                        onPress={navigateToProfile}
+                        style={styles.follow}
+                        onPress={() => {}}
                     >
-                        <Feather name="user" size={21} color="#00B0F0"/>
-                        <Text style={styles.profileText}>Perfil</Text>
+                        <Text style={styles.followText}>Seguindo </Text>
+                    </TouchableOpacity>
+                </View>
+                
+
+                <View style={styles.socialInteraction}>
+                    <TouchableOpacity
+                        style={styles.followers}
+                        onPress={() => {}}
+                    >
+                        <Feather name="users" size={21} color="#407294"/>
+                        <Text style={styles.followersText}>20.504 Seguidores</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.logout}
-                        onPress={navigateToLogin}
+                        style={styles.answers}
+                        onPress={() => {}}
                     >
-                        <Feather name="log-out" size={21} color="#b64029"/>
-                        <Text style={styles.profileText}>Logout</Text>
+                        <Feather name="tag" size={21} color="#407294"/>
+                        <Text style={styles.answersText}>70.892 Respostas</Text>
                     </TouchableOpacity>
                 </View>
             </View>
-
+            
             <FlatList 
                 data={[1, 2, 3, 4, 5, 6, 7]}
                 style={styles.postList}
                 keyExtractor={post => String(post)}
                 renderItem={() => (
                     <View style={styles.post}>
-                        <TouchableOpacity 
-                            style={styles.personal}
-                            onPress={navigateToPolitical}
-                        >
-                            <Image
-                                style={styles.avatar}
-                                source={{
-                                uri:
-                                    'https://www.cartacapital.com.br/wp-content/uploads/2020/04/Jair-Bolsonaro-Foto-EVARISTO-SA-_-AFP.jpg',
-                                }}
-                            />
-                            <View style={styles.peronsalText}>
-                                <Text style={styles.politicalName}>Jair Messias Bolsonaro </Text>
-                                <Text style={styles.politicalOffice}>Presidente</Text>
-                            </View>
-                        </TouchableOpacity>
-                        
-                    
+  
                         <View style={styles.postDetail}>
                             <Text style={styles.title}> Medida Provisória</Text>
                             <Text style={styles.content}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Text>
@@ -95,6 +91,7 @@ export default function Feed() {
 
                 )}
             />
+
         </View>
     );
 }
