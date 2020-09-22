@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
+
+import api from '../../services/api';
 
 import logoImg from '../../assets/logo.png';
 
 import styles from './styles';
 
 const Feed = () => {
+
+    const [posts, setPosts] = useState([]);
+
     const navigation = useNavigation();
 
     function navigateToProfile() {
@@ -21,6 +26,16 @@ const Feed = () => {
     function navigateToLogin() {
         navigation.navigate('Login');
     };
+
+    async function loadPosts() {
+        const response = await api.get('Postagens');
+
+        setPosts(response.data);
+    }
+
+    useEffect(() => {
+        loadPosts();
+    }, [])
 
     return (
         <View style={styles.container}>
@@ -46,10 +61,10 @@ const Feed = () => {
             </View>
 
             <FlatList 
-                data={[1, 2, 3, 4, 5, 6, 7]}
+                data={posts}
                 style={styles.postList}
-                keyExtractor={post => String(post)}
-                renderItem={() => (
+                keyExtractor={post => String(post.id)}
+                renderItem={({ item: post}) => (
                     <View style={styles.post}>
                         <TouchableOpacity 
                             style={styles.personal}
@@ -64,13 +79,13 @@ const Feed = () => {
                             />
                             <View style={styles.peronsalText}>
                                 <Text style={styles.politicalName}>Jair Messias Bolsonaro </Text>
-                                <Text style={styles.politicalOffice}>Presidente</Text>
+                            <Text style={styles.politicalOffice}>{post.mandateId}</Text>
                             </View>
                         </TouchableOpacity>
                         
                     
                         <View style={styles.postDetail}>
-                            <Text style={styles.title}> Medida Provisória</Text>
+                            <Text style={styles.title}>{post.text}</Text>
                             <Text style={styles.content}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Text>
                         </View>
 
