@@ -8,26 +8,6 @@ export default StyleSheet.create({
         paddingTop: Constants.statusBarHeight + 20,
      },
 
-     header: {
-         flexDirection: 'row',
-         justifyContent: 'space-between',
-         alignItems: 'center',
-     },
-
-     headerIcons:{
-        flexDirection: 'row',
-     },
-
-     logout :{
-         alignItems: 'center',
-         marginLeft: 30,
-         marginRight: 8
-     },
-
-     profile: {
-         alignItems: 'center',
-     },
-
      postList: {
         marginTop: 32,
      },

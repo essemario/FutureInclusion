@@ -24,14 +24,15 @@ namespace FutureInclusion.Web.Controllers.API
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Voter>>> GetVoter()
         {
-            return await _context.Voter.ToListAsync();
+            return await _context.Voter.Include(v => v.MandateVoter).ToListAsync();
         }
 
         // GET: api/Eleitores/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Voter>> GetVoter(uint id)
         {
-            var voter = await _context.Voter.FindAsync(id);
+            var voter = await _context.Voter.Include(v => v.MandateVoter).FirstOrDefaultAsync(i => i.Id == id);
+            //var voter = await _context.Voter.FindAsync(id);
 
             if (voter == null)
             {

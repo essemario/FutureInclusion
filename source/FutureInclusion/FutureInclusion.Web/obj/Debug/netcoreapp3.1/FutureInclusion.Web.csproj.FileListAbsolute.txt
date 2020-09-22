@@ -200,4 +200,13 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.csproj.CoreCompileInputs.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.MvcApplicationPartsAssemblyInfo.cache
-E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\FutureInclusionWebv1 - Web Deploy\profile.arm.json
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\FutureInclusionBackEnd - Web Deploy\profile.arm.json
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\System.Text.Json.dll
