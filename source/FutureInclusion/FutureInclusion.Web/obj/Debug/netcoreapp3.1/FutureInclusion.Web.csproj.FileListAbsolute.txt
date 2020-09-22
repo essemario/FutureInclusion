@@ -200,3 +200,4 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.csproj.CoreCompileInputs.cache
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\obj\Debug\netcoreapp3.1\FutureInclusion.Web.MvcApplicationPartsAssemblyInfo.cache
+E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.Web\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\FutureInclusionWebv1 - Web Deploy\profile.arm.json
