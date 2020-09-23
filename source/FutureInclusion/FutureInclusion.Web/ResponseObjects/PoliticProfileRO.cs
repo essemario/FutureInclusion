@@ -11,6 +11,5 @@ namespace FutureInclusion.Web.ResponseObjects
         public uint id;
         public String mandateName;
         public int followers;
-        public List<PollRO> poll;
     }
 }
