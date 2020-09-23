@@ -8945,20 +8945,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danny\\.nuget\\packages\\": {}
+    "C:\\Users\\Mario\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.Web\\FutureInclusion.Web.csproj",
+      "projectUniqueName": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.Web\\FutureInclusion.Web.csproj",
       "projectName": "FutureInclusion.Web",
-      "projectPath": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.Web\\FutureInclusion.Web.csproj",
-      "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
-      "outputPath": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.Web\\obj\\",
+      "projectPath": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.Web\\FutureInclusion.Web.csproj",
+      "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
+      "outputPath": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.Web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8970,8 +8977,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj": {
-              "projectPath": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj"
+            "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj": {
+              "projectPath": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj"
             }
           }
         }
