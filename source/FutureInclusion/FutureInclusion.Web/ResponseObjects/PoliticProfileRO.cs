@@ -9,6 +9,7 @@ namespace FutureInclusion.Web.ResponseObjects
     public class PoliticProfileRO
     {
         public uint id;
+        public string name;
         public String mandateName;
         public int followers;
     }

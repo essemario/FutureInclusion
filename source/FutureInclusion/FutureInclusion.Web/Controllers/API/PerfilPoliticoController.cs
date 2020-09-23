@@ -36,6 +36,7 @@ namespace FutureInclusion.Web.Controllers.API
             PoliticProfileRO polProfile = new PoliticProfileRO
             {
                 id = user.Id,
+                name = user.Name + " " + user.LastName,
                 mandateName = user.Mandate.Title,
                 followers = followersCount
             };

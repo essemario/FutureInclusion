@@ -41,7 +41,8 @@ export default StyleSheet.create({
          paddingVertical: 8,
          paddingHorizontal: 45,
          borderRadius: 8,
-         backgroundColor: "#b1ecd5",
+         backgroundColor: "#89cbff",
+         margin: 5
      },
 
      detailsButtonNo: {

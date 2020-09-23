@@ -13,7 +13,7 @@ const Header = () => {
       <View style={styles.headerIcons}>
         <TouchableOpacity
           style={styles.profile}
-          onPress={() => navigate("Profile")}
+          onPress={() => navigate("Profile", { name: 2 })}
         >
           <Feather name="user" size={21} color="#00B0F0" />
           <Text>Perfil</Text>
