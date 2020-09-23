@@ -5,6 +5,7 @@ import { View, FlatList, Image, Text, TouchableOpacity } from "react-native";
 import { Header } from "../Header";
 import loadFeed from "../../services/api";
 import styles from "./styles";
+import {TinyProfile} from "../../components/TinyProfile";
 
 const Feed = () => {
   const { navigate } = useNavigation();
@@ -21,34 +22,13 @@ const Feed = () => {
         data={posts}
         style={styles.postList}
         keyExtractor={(post) => String(post.id)}
-        renderItem={({ item: post }) => (
+        renderItem={({ item: poll }) => (
           <View style={styles.post}>
-            <TouchableOpacity
-              style={styles.personal}
-              onPress={() => navigate("Political", { name: "XYZ" })}
-            >
-              <Image
-                style={styles.avatar}
-                source={{
-                  uri:
-                    "https://www.cartacapital.com.br/wp-content/uploads/2020/04/Jair-Bolsonaro-Foto-EVARISTO-SA-_-AFP.jpg",
-                }}
-              />
-              <View style={styles.peronsalText}>
-                <Text style={styles.politicalName}>
-                  Jair Messias Bolsonaro{" "}
-                </Text>
-                <Text style={styles.politicalOffice}>{post.mandateId}</Text>
-              </View>
-            </TouchableOpacity>
-
+            <TinyProfile politic={poll.politic}/>
+            
             <View style={styles.postDetail}>
-              <Text style={styles.title}>{post.text}</Text>
-              <Text style={styles.content}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </Text>
+              <Text style={styles.title}>{poll.title}</Text>
+              <Text style={styles.content}>{poll.description}</Text>
             </View>
 
             <View style={styles.postVoting}>
