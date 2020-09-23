@@ -897,27 +897,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mario\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\danny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj",
       "projectName": "FutureInclusion.DataAccessLayer",
-      "projectPath": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
-      "outputPath": "E:\\Mario\\Docs\\FIAP\\Curso\\Trabalhos\\ANO_02\\Startup\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\obj\\",
+      "projectPath": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\FutureInclusion.DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+      "outputPath": "D:\\Faculdade\\Fiap\\BondedosBits\\Git\\FutureInclusion\\source\\FutureInclusion\\FutureInclusion.DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

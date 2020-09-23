@@ -10,3 +10,15 @@ E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureI
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
 E:\Mario\Docs\FIAP\Curso\Trabalhos\ANO_02\Startup\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.genruntimeconfig.cache
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.deps.json
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.runtimeconfig.json
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.runtimeconfig.dev.json
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\bin\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.csprojAssemblyReference.cache
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.AssemblyInfoInputs.cache
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.AssemblyInfo.cs
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.dll
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.pdb
+D:\Faculdade\Fiap\BondedosBits\Git\FutureInclusion\source\FutureInclusion\FutureInclusion.DataAccessLayer\obj\Debug\netcoreapp3.1\FutureInclusion.DataAccessLayer.genruntimeconfig.cache
