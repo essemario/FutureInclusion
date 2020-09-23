@@ -31,6 +31,8 @@ const Feed = () => {
               <Text style={styles.content}>{poll.description}</Text>
             </View>
 
+
+
             <View style={styles.postVoting}>
               <TouchableOpacity
                 style={styles.detailsButtonYes}
