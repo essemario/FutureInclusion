@@ -19,30 +19,6 @@ export default StyleSheet.create({
         marginBottom: 16,
      }, 
 
-     personal: {
-        flexDirection: 'row',
-        alignItems: 'center',
-     },
-
-     avatar: {
-        width: 60,
-        height: 60,
-        borderRadius: 30,
-        marginRight: 12,
-     },
-    
-     politicalName: {
-         fontSize: 18,
-         color: '#41414d',
-         fontWeight: 'bold',
-     },
-
-     politicalOffice: {
-        fontSize: 12,
-        color: '#00B0F0',
-        fontWeight: 'bold',
-     },
-
      title: {
         marginTop: 8,
         marginBottom: 4,

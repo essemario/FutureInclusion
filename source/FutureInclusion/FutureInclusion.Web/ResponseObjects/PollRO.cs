@@ -13,5 +13,6 @@ namespace FutureInclusion.Web.ResponseObjects
         public bool voted;
         public List<ChoiceRO> choices;
         public int totalVotes;
+        public PoliticBasicRO politic;
     }
 }

@@ -25,10 +25,20 @@ namespace FutureInclusion.Web.Controllers.API
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PollRO>>> GetPoll()
         {
-            List<Poll> pesquisas = await _context.Poll.Include(b => b.Choice).ToListAsync();
+            List<Poll> pesquisas = await _context.Poll.Include(mand => mand.Mandate).Include(b => b.Choice).ToListAsync();
             List<PollRO> polls = new List<PollRO>();
             foreach (Poll pesquisa in pesquisas)
             {
+                User politicModel = _context.User.Where(x => x.MandateId == pesquisa.MandateId).FirstOrDefault();
+
+                PoliticBasicRO politicRO = new PoliticBasicRO
+                {
+                    id = politicModel.Id,
+                    mandateId = pesquisa.MandateId,
+                    mandateName = pesquisa.Mandate.Title,
+                    politicName = politicModel.Name
+                };
+
                 PollRO temp = new PollRO
                 {
                     pollId = pesquisa.Id,
@@ -36,7 +46,8 @@ namespace FutureInclusion.Web.Controllers.API
                     description = pesquisa.Description,
                     choices = new List<ChoiceRO>(),
                     voted = false,
-                    totalVotes = 0
+                    totalVotes = 0,
+                    politic = politicRO
                 };
                 foreach(Choice escolha in pesquisa.Choice)
                 {
@@ -58,10 +69,20 @@ namespace FutureInclusion.Web.Controllers.API
         [HttpGet("{id}")]
         public async Task<ActionResult<IEnumerable<PollRO>>> GetPoll(uint id)
         {
-            List<Poll> pesquisas = await _context.Poll.Include(b => b.Choice).ToListAsync();
+            List<Poll> pesquisas = await _context.Poll.Include(mand => mand.Mandate).Include(b => b.Choice).ToListAsync();
             List<PollRO> polls = new List<PollRO>();
             foreach (Poll pesquisa in pesquisas)
             {
+                User politicModel = _context.User.Where(x => x.MandateId == pesquisa.MandateId).FirstOrDefault();
+
+                PoliticBasicRO politicRO = new PoliticBasicRO
+                {
+                    id = politicModel.Id,
+                    mandateId = pesquisa.MandateId,
+                    mandateName = pesquisa.Mandate.Title,
+                    politicName = politicModel.Name
+                };
+
                 PollRO temp = new PollRO
                 {
                     pollId = pesquisa.Id,
@@ -69,8 +90,10 @@ namespace FutureInclusion.Web.Controllers.API
                     description = pesquisa.Description,
                     choices = new List<ChoiceRO>(),
                     voted = false,
-                    totalVotes = 0
+                    totalVotes = 0,
+                    politic = politicRO
                 };
+
                 foreach (Choice escolha in pesquisa.Choice)
                 {
                     ChoiceRO choiceTemp = new ChoiceRO

@@ -4,7 +4,7 @@ const api = axios.create({
 });
 
 const loadFeed = async (callback) => {
-  const response = await api.get("Postagens");
+  const response = await api.get("Feed");
   callback(response.data);
 };
 
