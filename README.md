@@ -5,9 +5,9 @@ Estamos utilizando:
 
 C#, Entity Framework: 3.1.0, MySQL (Remoto), MVC 5
 
-Sitema WEB publicado em: https://futureinclusionwebv1.azurewebsites.net/
+Sitema WEB publicado em: https://futureinclusionbackend.azurewebsites.net
 
-API publicada: https://futureinclusionwebv1.azurewebsites.net/api/
+API publicada: https://futureinclusionbackend.azurewebsites.net/api/
 
 Documentação da API: https://documenter.getpostman.com/view/2861207/Szf81nNo
 
